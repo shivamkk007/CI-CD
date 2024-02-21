@@ -24,5 +24,5 @@ jobs:
 
     - name: Run Test
       run: |
-        cd Code
+        cd Codes
         python -m pytest Div.py
