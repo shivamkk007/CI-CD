@@ -1,4 +1,4 @@
-from Codes import Binary
+from Code.BinaryS import Search
 
 '''The following is a Custom Test Function'''
 
@@ -39,10 +39,10 @@ def test_custom():
     
     for i,test in enumerate(tests):
         
-        assert Binary(test['input']['list'], test['input']['target'])==test['output']
+        assert Search.Binary(test['input']['list'], test['input']['target'])==test['output']
         
         
-        if(Binary(test['input']['list'], test['input']['target'])==test['output']):
+        if(Search.Binary(test['input']['list'], test['input']['target'])==test['output']):
             print(f"Test {i} Passed! ")
         else:
             print(f"Test{i} Failed! ")
