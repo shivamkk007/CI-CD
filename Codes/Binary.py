@@ -65,10 +65,13 @@ def test_custom():
     for i,test in enumerate(tests):
         assert Binary(test['input']['list'], test['input']['target'])==test['output']
         
-        # if(Binary(**test['input'])==test['output']):
-        #     print(f"Test {i} Pass, \nTest Attributes",test,"Result:",result,"\n")
-        # else:
-        #     print(f"Test{i} Failed, \nTest Attributes",test,"Result:",result,"\n")
-        # assert Binary(**test['input']==test['output'])
+        
+        if(Binary(test['input']['list'], test['input']['target'])==test['output']):
+            print(f"Test {i} Passed! ")
+        else:
+            print(f"Test{i} Failed! \n")
+            
+
         
         
+test_custom()
