@@ -17,7 +17,7 @@ def Binary(list,target):
         if list[mid]<target:
             hi=mid-1
             
-    return "Not in List"
+    return -1
 
 # def test():
     
@@ -63,12 +63,12 @@ def test_custom():
     })
     
     for i,test in enumerate(tests):
-        result=Binary(test['input']['list'], test['input']['target'])
+        assert Binary(test['input']['list'], test['input']['target'])==test['output']
         
-        if(Binary(**test['input'])==test['output']):
-            print(f"Test {i} Pass, \nTest Attributes",test,"Result:",result,"\n")
-        else:
-            print(f"Test{i} Failed, \nTest Attributes",test,"Result:",result,"\n")
-        assert Binary(**test['input']==test['output'])
+        # if(Binary(**test['input'])==test['output']):
+        #     print(f"Test {i} Pass, \nTest Attributes",test,"Result:",result,"\n")
+        # else:
+        #     print(f"Test{i} Failed, \nTest Attributes",test,"Result:",result,"\n")
+        # assert Binary(**test['input']==test['output'])
         
         
