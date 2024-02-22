@@ -17,7 +17,7 @@ def Binary(list,target):
         if list[mid]<target:
             hi=mid-1
             
-    return -1
+    return 0
 
 # def test():
     
