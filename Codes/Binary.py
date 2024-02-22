@@ -17,7 +17,7 @@ def Binary(list,target):
         if list[mid]<target:
             hi=mid-1
             
-    return 0
+    return -1
 
 # def test():
     
@@ -70,7 +70,7 @@ def test_custom():
         if(Binary(test['input']['list'], test['input']['target'])==test['output']):
             print(f"Test {i} Passed! ")
         else:
-            print(f"Test{i} Failed! \n")
+            print(f"Test{i} Failed! ")
             
 
 test_custom()
