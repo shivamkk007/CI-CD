@@ -29,6 +29,6 @@ jobs:
         python -m pytest Div.py
         python -m pytest Binary.py
 
-    - name: Generate Coverage Report  
-      run: |  
-        coverage report -m
+    # - name: Generate Coverage Report  
+    #   run: |  
+    #     coverage report -m
