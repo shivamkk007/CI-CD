@@ -1,3 +1,5 @@
+'''The following function Performs Binary Search on an Descending List'''
+
 def Binary(list,target):
     lo=0
     hi=len(list)-1
@@ -19,13 +21,8 @@ def Binary(list,target):
             
     return -1
 
-# def test():
-    
-#     assert Binary([1,2,4,5,6],4)==2
-#     assert Binary([1,2,4,5,5,6],5)==3
-#     assert Binary([1,2,4,5,6,7,8],8)==6
-    
-# Push V1.3
+
+'''The following is a Custom Test Function'''
 
 def test_custom():
     
@@ -72,7 +69,5 @@ def test_custom():
         else:
             print(f"Test{i} Failed! ")
             
-
+# Calling Custom Test Function
 test_custom()
-
-# Test Commit
