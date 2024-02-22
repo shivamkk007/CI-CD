@@ -63,6 +63,7 @@ def test_custom():
     })
     
     for i,test in enumerate(tests):
+        
         assert Binary(test['input']['list'], test['input']['target'])==test['output']
         
         
@@ -72,6 +73,6 @@ def test_custom():
             print(f"Test{i} Failed! \n")
             
 
-        
-        
 test_custom()
+
+# Test Commit
